@@ -1,0 +1,13 @@
+{
+    "name": "Alex",
+    "age": 30,
+    "student": true,
+    "adress": {
+        "city": "Kyiv"
+    },
+    "skills": [
+        "Python",
+        "C++"
+    ],
+    "telephone": null
+}

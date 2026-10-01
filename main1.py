@@ -1,11 +1,10 @@
-name = input("Enter your name: ")
+import json
 
-print(f"Hello, {name}!")
+response = '{"name": "Alex", "age": 17, "skills": ["Python", "Git"]}'
 
-print("Welcome to the program. Let's get started!")
-
-first_num = int(input("enter first number: "))
-second_num = int(input("enter second number: "))
-print(first_num + second_num)
-
-print("This change was made on GitHub!")
+response = json.loads(response)
+response['age'] = 18
+response['skills'].append("FastAPI")
+response = json.dumps(response)
+print(response)
+print(type(response))
