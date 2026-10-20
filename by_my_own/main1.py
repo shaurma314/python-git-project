@@ -1,5 +1,5 @@
 from fastapi import FastAPI, HTTPException
-from anothers import localsession
+from connection import localsession
 from classes import CreateUser, User, PatchUser
 from sqlalchemy import select, insert, delete, update
 
